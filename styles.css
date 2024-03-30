@@ -1,0 +1,107 @@
+body,
+h1,
+h3 {
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-box {
+    padding: 30px 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    background-color: #314a85;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+    margin: 20px auto;
+    width: 60%;
+}
+
+.form-group {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.convert-icon{
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: gray;
+}
+
+input[type="number"] {
+    padding: 16px;
+    width: 355px;
+    border: 1.25px solid rgb(208, 208, 208);
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.input-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 58px;
+    width: 120px;
+    right: 0px;
+    gap: 10px;
+    color: white;
+    bottom: 0px;
+    background-color: rgb(39, 75, 147);
+    border-radius: 4px;
+}
+
+.convert-btn{
+    padding: 15px 50px;
+    font-size: 16px;
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    background-color: #314a85;
+    border-radius: 6px;
+    width: fit-content;
+    transition: all 0.5s ease-out;
+}
+
+.convert-btn:hover{
+    background-color: #0f2045;
+    transition: all 0.5s ease-out;
+}
+
+.reset-btn{
+    padding: 15px 50px;
+    font-size: 16px;
+    color: black;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    border:2px solid grey;
+    border-radius: 5px;
+    width: fit-content;
+    transition: all 2s ease-out;
+}
+
+.flex-box{
+    display: flex;
+    gap: 20px;
+    margin: auto;
+    width: 60%;
+}
