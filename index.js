@@ -1,3 +1,4 @@
+// Basic Initialization of variables
 amountFlagText = "USD";
 altAmountFlagText = "CAD";
 
@@ -11,6 +12,7 @@ document.getElementById("altAmountFlagText").innerText = altAmountFlagText;
 document.getElementById("amountFlag").src = amountFlag;
 document.getElementById("altAmountFlag").src = altAmountFlag;
 
+// Function to handle exchange icon click to reverse conversion.
 function exchangeFlag() {
   if (amountFlagText == "USD") {
     amountFlagText = "CAD";
@@ -18,12 +20,14 @@ function exchangeFlag() {
     amountFlag = "ca.png";
     altAmountFlag = "us.png";
     conversionRate = 0.74;
+    convertCurrency();
   } else {
     amountFlagText = "USD";
     altAmountFlagText = "CAD";
     amountFlag = "us.png";
     altAmountFlag = "ca.png";
     conversionRate = 1.35;
+    convertCurrency();
   }
   document.getElementById("amountFlagText").innerText = amountFlagText;
   document.getElementById("altAmountFlagText").innerText = altAmountFlagText;
@@ -31,6 +35,7 @@ function exchangeFlag() {
   document.getElementById("altAmountFlag").src = altAmountFlag;
 }
 
+// Function to handle convert currency button
 function convertCurrency() {
   const amountInput = document.getElementById("amountId").value;
 
@@ -44,6 +49,7 @@ function convertCurrency() {
   document.getElementById("altAmountId").value = altAmountResult;
 }
 
+// Function to handle reset of form
 function reset() {
   document.getElementById("amountId").value = "";
   document.getElementById("altAmountId").value = "";
