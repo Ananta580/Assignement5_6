@@ -20,19 +20,19 @@ function exchangeFlag() {
     amountFlag = "ca.png";
     altAmountFlag = "us.png";
     conversionRate = 0.74;
-    convertCurrency();
   } else {
     amountFlagText = "USD";
     altAmountFlagText = "CAD";
     amountFlag = "us.png";
     altAmountFlag = "ca.png";
     conversionRate = 1.35;
-    convertCurrency();
   }
   document.getElementById("amountFlagText").innerText = amountFlagText;
   document.getElementById("altAmountFlagText").innerText = altAmountFlagText;
   document.getElementById("amountFlag").src = amountFlag;
   document.getElementById("altAmountFlag").src = altAmountFlag;
+
+  if (document.getElementById("amountId").value != "") convertCurrency();
 }
 
 // Function to handle convert currency button
