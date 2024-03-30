@@ -46,7 +46,7 @@ function convertCurrency() {
   }
 
   const altAmountResult = parseFloat(amountInput) * conversionRate;
-  document.getElementById("altAmountId").value = altAmountResult;
+  document.getElementById("altAmountId").value = altAmountResult.toFixed(3);
 }
 
 // Function to handle reset of form
